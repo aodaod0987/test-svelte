@@ -1,6 +1,14 @@
 <script>
-  let name = "World";
+  import Nested from "./Nested.svelte";
 </script>
 
-<h1>hello {name}!</h1>
-<input bind:value={name} />
+<p>This is a paragraph.</p>
+<Nested />
+
+<style>
+  p {
+    color: red;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+  }
+</style>
